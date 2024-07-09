@@ -9,20 +9,29 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
         }
-        #pdf-viewer {
-            width: 100%;
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .pdf-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 90vh;
+            width: 100%;
+        }
+        iframe {
+            width: 80%;
+            height: 100%;
             border: none;
         }
     </style>
 </head>
 <body>
     <h1>PDF Datei: Robin Deutsch Korrektur</h1>
-    <iframe id="pdf-viewer" src="robindeutschkorrektur.pdf"></iframe>
+    <div class="pdf-container">
+        <iframe src="robindeutschkorrektur.pdf"></iframe>
+    </div>
 </body>
 </html>
